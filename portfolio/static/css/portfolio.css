@@ -1,17 +1,19 @@
 .page-header {
-    background-color: #C25100;
+    /*background-color: #a1e3f0;*/
+    background-color: #f8f9fa;
     margin-top: 0;
     margin-bottom: 0px;
-    padding: 20px 20px 20px 40px;
+    padding: 10px 20px 10px 40px;
 }
 
 .page-header h1,
 .page-header h1 a,
 .page-header h1 a:visited,
 .page-header h1 a:active {
-    color: #ffffff;
+    color: #1a1a1a;
     font-size: 36pt;
     text-decoration: none;
+    /*text-shadow: -1px -1px 0 #53a7b8, 1px -1px 0 #53a7b8, -1px 1px 0 #53a7b8, 1px 1px 0 #53a7b8;*/
 }
 
 h1,
@@ -75,4 +77,67 @@ h4 {
     flex-flow:column wrap;
     justify-content: center;
     align-items: center;
+}
+
+.center h1 {
+    /*add font---------*/
+}
+
+#background h1 {
+    margin-top: 10px;
+}
+
+#background {
+    border-radius: 25px;
+    background-color: #e3e3e3;
+    padding: 20px;
+}
+
+.nav-item:hover {
+    border-radius: 20px;
+    background-color: #c7c7c7;
+}
+
+div.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 2%;
+}
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+}
+
+hr {
+  border: none; /* Remove default border */
+  border-top: 1px solid #ccc; /* Add a top border for the line */
+  width: 85%; /* Adjust width as needed */
+  margin: 20px auto; /* Center the line and add vertical spacing */
+  border-color: black;
+}
+
+hr.header {
+  border: none; /* Remove default border */
+  border-top: 1px solid #ccc; /* Add a top border for the line */
+  width: 100%; /* Adjust width as needed */
+  margin: 0px; /* Center the line and add vertical spacing */
+  margin-top: 10px;
+  border-color: black;
+}
+
+.navbar-border {
+    border-top: 1px solid #ccc;
+}
+
+.active {
+    border-bottom: 2px solid #000000;
 }
