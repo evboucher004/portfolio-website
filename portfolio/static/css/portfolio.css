@@ -4,6 +4,7 @@
     margin-top: 0;
     margin-bottom: 0px;
     padding: 10px 20px 10px 40px;
+    padding-bottom: 0px;
 }
 
 .page-header h1,
@@ -21,6 +22,10 @@ h2,
 h3,
 h4 {
     /*font-family: 'Lobster', cursive;*/
+}
+
+h3 {
+    font-size: 20px;
 }
 
 .date {
@@ -80,6 +85,9 @@ h4 {
 }
 
 .center h1 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    /*border-bottom: 1px solid #ccc;*/
     /*add font---------*/
 }
 
@@ -89,7 +97,7 @@ h4 {
 
 #background {
     border-radius: 25px;
-    background-color: #e3e3e3;
+    background-color: #ebebeb;
     padding: 20px;
 }
 
@@ -101,6 +109,7 @@ h4 {
 div.flex-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin-left: 25px;
   margin-right: 25px;
   margin-top: 2%;
@@ -110,7 +119,7 @@ div.flex-container > div {
   margin: 10px;
 }
 
-/* Use media query and show the flex items vertically if screen width is less than 600px */
+/* Use media query and show the flex items vertically if screen width is less than 600px for the navbar*/
 @media screen and (max-width:600px) {
   div.flex-container {
     flex-direction: column;
@@ -134,10 +143,55 @@ hr.header {
   border-color: black;
 }
 
-.navbar-border {
-    border-top: 1px solid #ccc;
+.navbar-border { /*Border at the bottom of the header*/
+    border-bottom: 1px solid #ccc;
 }
 
-.active {
+.active { /*Shows the current page on the navbar*/
     border-bottom: 2px solid #000000;
 }
+
+.container-fluid {
+    background-color: #f8f9fa;
+}
+
+.bg-body-tertiary {
+    background-color: #f8f9fa !important;
+}
+
+/*Styles for the main body of each page*/
+.flex-info-container {
+    padding-left: 5%;
+    /*padding-right: 2.5%;*/
+    /*padding-right: 55%;*/
+    max-width: 47.5%; /*sets column to be half of the cards width*/
+    flex: 1;
+}
+
+.flex-info-container p {
+    text-indent: 2em;
+    font-size: 16px;
+}
+
+/*Styles for repository links*/
+.repository-link {
+    color: black;
+}
+
+.repository-link:hover {
+    color: blue;
+}
+
+.column-break {
+    flex-basis: 100%;
+    width: 50%; /* Ensures it takes up no visual width, only forces the wrap */
+}
+
+.columns-index{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1380px; /*the height of the columns, anything that doesnt fit gets moved to a new column*/
+}
+/*#f8f9fa*/
+/*#e3e3e3*/
