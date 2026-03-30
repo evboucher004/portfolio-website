@@ -1,62 +1,61 @@
-{% extends 'portfolio/base.html' %}
-{% load static %}
+{% extends 'portfolio/base.html' %} <!--loads page header/nav bar-->
+{% load static %} <!--loads static files; css, images, etc-->
 
 {% block content %}
 
 <html>
     <head>
-        <title>Portfolio Home</title>
+        <title>Home Page</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
         <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
     </head>
     <body>
 
-        <main class="container">
+        <main class="container"> <!--Container that creates the card-->
             <div class="flex-container"> <!--Centers the card-->
                 <div id="background"> <!--Background for the card-->
 
                     <div class="center"> <!--Container for the cards header-->
-                        <h1>Portfolio Website</h1>
+                        <h1>Home</h1>
                         <hr/>
-                        <h3>Stack: Python, Django, HTML, CSS, JavaScript, nginx</h3>
-                        <h3><a href="https://github.com/evboucher004/portfolio-website" target="_blank" class="repository-link">Project Repository</a></h3>
                     </div>
 
                     <div class="columns-index"> <!--Sets up the two columns in the cards body-->
 
                         <div class="flex-info-container"> <!--Container for the left column in the cards body-->
-                            <h2>Purpose</h2>
-                            <p>This website was created as a way to show off a few of the projects I created, alongside giving my thoughts on them.
-                                This website was also created to be hosted on a raspberry pi, with the intention of being added to my resume as a way to show what I can do.</p>
-                            <p>These projects were created for various reasons, but they were all major learning experiences as all the projects used new technologies, softwares, and languages that I had little to no prior knowledge on.</p>
-                            <p>I also wanted to learn how to self-host a website on a local machine. I have previously developed websites for classwork in college, but have never done anything with them. This project is a stepping stone for me to be able to host my own websites in the future.</p>
-                            <!--Inspiration came from creating a different website for a minecraft server I run...
-                                I also wanted to try using a raspberry pi, and what better way to do that then to run a website that serves a real purpose.-->
-                            <!--insert stock image of languages/technologies-->
+                            <h2>About Me</h2>
+                            <p> </p>
 
-                            <h2>Process</h2>
-                            <!--I created the visual style of the website myself. No references or inspiration, all my brain.-->
-                            <p>This website was created from scratch using a blank django project, with no template or cookie cutters used. The first step was to learn how to run a basic page and access it from the browser, which was a simple task that I completed by using a beginners tutorial to django.</p>
-                            <p>The next major step is creating the pages I intend to have on the website and setting up the routing to traverse between them. This was also a simple task, due to the beginners tutorial covering it. I did run into some minor issues here due to the vague explanations given by the tutorial, but following a video guide cleared up any confusion.</p>
-                            <p>The most difficult part of creating this website was the layout and CSS. I have very little experience in graphic design and CSS in general, but I decided that I did not want to look up templates or tutorials for the layout and design. Instead, I designed it entirely through trial and error, which was possible due to creating a vision of what I wanted the website to look like beforehand. Without having a design goal, I do not believe I would have created something visually pleasing, and I most likely would have resorted to a guide or template.</p>
+                            <h2>The Projects</h2>
+                            <p>There are four projects that I have selected to be displayed on this portfolio, and this section will give a brief introduction into what they are. All four are solo projects created by me.</p>
+                            <h3>Portfolio Website:</h3> <p>A website is designed to showcase a few of the projects that I have created.</p>
+                            <h3>Image Slideshow Program:</h3> <p>A program that will create a slideshow from any number and types of images. Includes many settings to customize the slideshow.</p>
+                            <h3>MTG Deck Downloader:</h3> <p></p>
+                            <h3>SNHU Website Redesign:</h3> <p></p>
 
-                            <h2>What I Learned</h2>
-                            <p>Creating this website I got a lot more experience in website development, especially front-end design, and learned how to use django. The biggest hurdle was designing the website in a minimalist style, to give it a modern look and feel. Having a vision of what I wanted the website to do and look like made it much easier to create and design.</p>
-                            <p>The main takeaways from developing this project was not about website creation itself, as it was not new to me, but instead due the hosting and Linux side.
-                                Linux in its entirety was something I had no experience with, and using a raspberry pi to run the website alongside using nginx to host the website and create the reverse proxy were all things I had to learn as I worked on the project. </p>
-                            <p>Learning the basics of Linux is something that I knew would be very beneficial to me, as Linux is an OS that I will run into during my career. It's best to expose myself to it and learn the basics now, before I need to use it and end up being behind or overwhelmed from having to learn it on top of what's needed for the job itself.</p><!--Insert Raspberry pi image here-->
+
+                            <h2>What I Could Improve On</h2>
+                            <p>Comments, readability, and optimization</p>
+                            <p>I have only worked solo on projects so far and am not used to working on a team, so good commenting is not a strong suit of mine.</p>
+
+                            <h2>What I Am Currently Working On</h2>
+                            <p></p>
+
+                            <h2>Is This Page Necessary?</h2>
+                            <p> </p>
+
                         </div>
 
                         <div class="flex-info-container"> <!--Container for the right column in the cards body-->
-                            <img src="{% static 'images/python.webp' %}" alt="Python image" style="padding-top: 47px; width: 450px; height: auto"> <!--python.jpg image, next to purpose section-->
+
                         </div>
 
                     </div> <!--columns-index-->
 
                 </div> <!--background-->
             </div> <!--flex-container-->
-        </main>
+        </main> <!--main card container-->
 
     </body>
 </html>
