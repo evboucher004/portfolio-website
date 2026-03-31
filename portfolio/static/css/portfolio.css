@@ -143,6 +143,8 @@ hr.header {
   border-color: black;
 }
 
+
+
 .navbar-border { /*Border at the bottom of the header*/
     border-bottom: 1px solid #ccc;
 }
@@ -175,11 +177,14 @@ hr.header {
 
 /*Styles for repository links*/
 .repository-link {
-    color: black;
+    color: #4153f2;
+    text-decoration: underline;
 }
 
 .repository-link:hover {
     color: blue;
+    text-decoration: underline;
+    /*text-decoration-thickness: 3px;*/
 }
 
 .column-break {
@@ -187,11 +192,19 @@ hr.header {
     width: 50%; /* Ensures it takes up no visual width, only forces the wrap */
 }
 
+/*Card background sizing*/
 .columns-index{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 1450px; /*the height of the columns, anything that doesnt fit gets moved to a new column*/
+}
+
+.columns-snhu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1430px; /*the height of the columns, anything that doesnt fit gets moved to a new column*/
 }
 /*#f8f9fa*/
 /*#e3e3e3*/
