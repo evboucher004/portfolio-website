@@ -206,5 +206,12 @@ hr.header {
     flex-wrap: wrap;
     height: 1600px; /*the height of the columns, anything that doesnt fit gets moved to a new column*/
 }
+
+.columns-mtg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px; /*the height of the columns, anything that doesnt fit gets moved to a new column*/
+}
 /*#f8f9fa*/
 /*#e3e3e3*/
