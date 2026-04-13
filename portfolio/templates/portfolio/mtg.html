@@ -29,22 +29,28 @@
                             <h2>Purpose</h2>
                             <p>Magic The Gathering is a very expensive hobby, and this program helps with that issue. It allows for easy access to the cards digitally so that they can be imported into Tabletop Simulator, a pc game that allows for easy online access to board and card games. Using this program and Tabletop Simulator's deck builder you can easily import your Magic decks from Moxfield into Tabletop to play with unrestricted access to the cards you want.</p>
 
-                            <h2>Process</h2>
-                            <p>The first major step for creating this project was to understand how to scrape images from a website. This was done using the pillow package, a python package designed specifically for image processing. This was the simplest step of the project, but also the most important.</p>
-                            <p>Next, was the most challenging part, getting the necessary information from the Moxfield API to create lists for the cards separated by type. Each type of card has to be handled separately due to not all cards being a part of the main deck, and the inclusion of double-sided cards. This required the program to treat each card type differently and to have a separate location to download them to.</p>
-                            <p>The last step was to rename each image to reflect the name of the card to allow users to search for cards directly, as decks typically have around 60-70 unique cards in them. This was done by storing the cards name when reading through the Moxfield API, then renaming the image after it's downloaded to the stored name.</p>
+                            <img src="{% static 'images/mtg-logo.png' %}" alt="Magic The Gathering Logo" style="padding-top: 25px; padding-left: 100px; width: 400px; height: auto">
+                            <img src="{% static 'images/moxfield.webp' %}" alt="Moxfield Logo" style="padding-top: 25px; padding-bottom: 50px; padding-left: 100px; width: 400px; height: auto">
 
                             <h2>What I Learned</h2>
                             <p>There were two aspects of this project that were valuable to learn, scraping and file management. Scraping is very specific and not applicable in most situations, but it is still a good tool to have as it does have its uses and may be handy in the future.
                                 File management is very important and will almost always be relevant is some shape or form. Whether it's reading from a file or storing data for later use file management will be crucial in my career and this project provided me with valuable experience in this aspect.</p>
 
-                            <h2>What Could Be Improved</h2>
-
                         </div>
 
                         <div class="flex-info-container"> <!--Container for the right column in the cards body-->
                             <img src="{% static 'images/tabletop.png' %}" alt="Tabletop Simulator Logo" style="padding-top: 25px; padding-bottom: 50px; width: 300px; height: auto">
+
+                            <h2>Process</h2>
+                            <p>The first major step for creating this project was to understand how to scrape images from a website. This was done using the pillow package, a python package designed specifically for image processing. This was the simplest step of the project, but also the most important.</p>
+                            <p>Next, was the most challenging part, getting the necessary information from the Moxfield API to create lists for the cards separated by type. Each type of card has to be handled separately due to not all cards being a part of the main deck, and the inclusion of double-sided cards. This required the program to treat each card type differently and to have a separate location to download them to.</p>
+                            <p>The last step was to rename each image to reflect the name of the card to allow users to search for cards directly, as decks typically have around 60-70 unique cards in them. This was done by storing the cards name when reading through the Moxfield API, then renaming the image after it's downloaded to the stored name.</p>
+
+                            <img src="{% static 'images/files.jpg' %}" alt="File Management Image" style="padding-top: 25px; padding-bottom: 50px; padding-left: 25px; width: 450px; height: auto">
+
                         </div>
+
+
 
                     </div> <!--columns-index-->
 

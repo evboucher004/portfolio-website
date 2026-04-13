@@ -211,7 +211,7 @@ hr.header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 1200px; /*the height of the columns, anything that doesnt fit gets moved to a new column*/
+    height: 1000px; /*the height of the columns, anything that doesnt fit gets moved to a new column*/
 }
 /*#f8f9fa*/
 /*#e3e3e3*/
