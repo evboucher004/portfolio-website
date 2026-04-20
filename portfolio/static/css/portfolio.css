@@ -193,6 +193,13 @@ hr.header {
 }
 
 /*Card background sizing*/
+.columns-index{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1050px; /*the height of the columns, anything that doesnt fit gets moved to a new column*/
+}
+
 .columns-portfolio{
     display: flex;
     flex-direction: column;
