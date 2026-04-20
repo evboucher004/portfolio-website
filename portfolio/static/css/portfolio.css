@@ -192,6 +192,12 @@ hr.header {
     width: 50%; /* Ensures it takes up no visual width, only forces the wrap */
 }
 
+.indexhr {
+    padding-bottom: 125px;
+    visibility: none;
+    border: none;
+}
+
 /*Card background sizing*/
 .columns-index{
     display: flex;
